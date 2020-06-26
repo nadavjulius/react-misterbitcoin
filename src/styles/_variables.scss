@@ -1,0 +1,14 @@
+/* Colors */
+$clr1: #008600;
+$clr2: #3d7c47;
+$clr3: #252a34;
+$clr4: #eaeaea;
+
+/* Break Points */
+$break-mobile: 600px;
+$break-narrow: 900px;
+$break-wide: 1200px;
+
+/* Helpers */
+$shadow: 0 3px 8px 0 rgba($clr3, 0.1);
+$text-muted: lighten($clr3, 40%);

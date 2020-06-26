@@ -1,0 +1,20 @@
+.transfer-fund {
+    text-align: center;
+
+    form {
+        display: inline-block;
+        width: 85%;
+        
+        button {
+            margin-top: 20px;
+            padding: 9px;
+        }
+    } 
+}
+.input-range__slider {
+    background: $clr2;
+    border-color: $clr2;
+}
+.input-range__track--active {
+    background: $clr1;
+}

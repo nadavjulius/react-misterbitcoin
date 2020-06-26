@@ -1,0 +1,25 @@
+//_
+@import './styles/variables';
+@import './styles/functions';
+@import './styles/mixins';
+
+// BASE
+@import './styles/setup.scss';
+@import './styles/helpers.scss';
+
+// PAGES
+@import './styles/pages/home.scss';
+@import './styles/pages/contactsPage.scss';
+@import './styles/pages/cotnactDetails.scss';
+@import './styles/pages/statisticPage.scss';
+@import './styles/pages/contactEdit.scss';
+
+// COMPONENTS
+@import './styles/components/navBar.scss';
+@import './styles/components/contactsList.scss';
+@import './styles/components/contactsPreview.scss';
+@import './styles/components/contactFilter.scss';
+@import './styles/components/transfer-fund';
+@import './styles/components/move-list';
+
+

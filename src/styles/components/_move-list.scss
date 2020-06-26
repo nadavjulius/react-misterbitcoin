@@ -1,0 +1,42 @@
+.move-list {
+
+    h3 {
+        color: #373a38;
+
+        span {
+
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding: 0 0 10px 10px;
+            margin: 0 0 10px 0;
+            
+            &:not(:last-child) {
+                border-bottom: 1px solid darkgray;
+
+            }
+            .__sum {
+                font-weight: 600;
+                .money {
+                   color: $clr1;
+                }
+                .btc {
+                    color: $clr2;
+                }
+            }
+            .__to {
+                font-size: .8em;
+                
+            }
+            .__at {
+                font-size: .8em;
+
+            }
+        }
+    }
+}
+

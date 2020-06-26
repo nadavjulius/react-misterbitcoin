@@ -1,0 +1,106 @@
+.home-container {
+    padding: 20px 30px;
+
+    @media screen and (max-width: 420px) {
+        padding: 7px 10px;
+    }
+
+    & h2 {
+        cursor: default;
+        padding-bottom: 1em;
+        font-size: 3em;
+        color: #008600;
+        text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 2px 2px 0 #000;
+        transition: all 0.3s;
+
+        @media screen and (max-width: 420px) {
+            padding-bottom: 0.4em;
+            font-size: 2em;
+        }
+
+        &:hover {
+            text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 4px 4px 0 #000, 2px 2px 0 #000;
+        }
+    }
+
+    &-main {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+
+        &-data {
+            margin-right: 2em;
+
+            @media screen and (max-width: 420px) {
+                margin: auto auto 0 auto;
+            }
+
+            &-balance {
+                display: flex;
+                flex-flow: wrap column;
+                width: 450px;
+
+                @media screen and (max-width: 420px) {
+                    width: 275px;
+                    padding: 5px 10px 5px 10px;
+                }
+
+                &-img {
+                    width: 65px;
+                    align-self: flex-end;
+                    position: absolute;
+                    transform: translateY(5px);
+
+                    @media screen and (max-width: 420px) {
+                        width: 45px;
+                        transform: translateY(18px);
+                    }
+                }
+            }
+
+            &-rates {
+                display: flex;
+                flex-flow: wrap column;
+                width: 450px;
+
+                @media screen and (max-width: 420px) {
+                    width: 275px;
+                    padding: 5px 10px 5px 10px;
+                }
+
+                &-img {
+                    width: 65px;
+                    align-self: flex-end;
+                    position: absolute;
+                    transform: translateY(5px);
+
+                    @media screen and (max-width: 420px) {
+                        width: 45px;
+                        transform: translateY(18px);
+                    }
+                }
+            }
+        }
+
+        &-bank {
+            width: 300px;
+            height: 252px;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-evenly;
+
+            @media screen and (max-width: 420px) {
+                margin: 0 10px;
+            }
+
+            &-img {
+                width: 55px;
+                align-self: flex-end;
+                position: absolute;
+                transform: translateY(-90px) translateX(10px);
+            }
+        }
+    }
+}
+
+

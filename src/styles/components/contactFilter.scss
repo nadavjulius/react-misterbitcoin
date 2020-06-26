@@ -1,0 +1,44 @@
+.contact-filter {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 0 20px 0;
+
+    &-input {
+        width: 285px;
+        padding: 10px;
+        font-size: 1.1em;
+        border-radius: 9px;
+        border:  1px solid white;
+        transition: border .3s;
+        margin: 0 30px;
+
+        @media screen and (max-width: 550px) {
+            margin: 0 5px;
+            width: 250px;
+        }
+
+        @media screen and (max-width: 375px) {
+            margin: 0 5px;
+            width: 200px;
+        }
+        
+        &:hover {
+            border: 1px solid #5a5555;
+            transition: border 1s .3s;
+        }
+    }
+    
+    &-add {
+        padding: 0px;
+        border-radius: 50%;
+        height: 40px;
+        margin: 0 0 0 30px;
+
+        &-img {
+            width: 40px;
+        }
+    }
+}

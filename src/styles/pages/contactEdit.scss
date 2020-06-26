@@ -1,0 +1,108 @@
+.contact-edit {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 30px;
+    display: flex;
+    flex-flow: wrap column;
+
+    @media screen and (max-width: 420px) {
+        padding: 0 10px;
+    }
+
+    &-nav {
+        margin: 0 0 15px 0;
+
+        &-link {
+            height: 32px;
+            margin: 0px 30px 0 0;
+            padding: 7px;
+        }
+    }
+
+    &-card {
+        display: grid;
+        grid-template-columns: 20% 65% 10%;
+        grid-template-rows: 1fr;
+
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 30% 60% 10%;
+        }
+
+        @media screen and (max-width: 700px) {
+            display: flex;
+            flex-flow: wrap column;
+        }
+
+        &-avitar {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 10px;
+
+            @media screen and (max-width: 420px) {
+                width: 50px;
+            }
+        }
+
+        &-inputs {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: space-between;
+            width: 350px;
+
+            @media screen and (max-width: 420px) {
+                width: 300px;
+            }
+
+            & > input {
+                padding: 7px;
+                margin: 5px 0 5px 0;
+                border: none;
+                border-radius: 7px;
+                background-color: #f9f9f9;
+
+                &:hover {
+                    background-color: #e6e6e6;
+                    transition: ease 0.6s;
+                }
+
+                &:focus {
+                    background-color: #e6e6e6;
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
+
+            &-save {
+                height: 32px;
+                margin: 0px 0px 0 0;
+                padding: 7px;
+                width: fit-content;
+                align-self: flex-end;
+
+                @media screen and (max-width: 700px) {
+                    margin: 5px 0px 5px 0;
+                }
+            }
+
+            &-delete {
+                height: 32px;
+                margin: 0px 10px 0 10px;
+                padding: 7px;
+                background-color: rgb(207, 19, 19);
+                align-self: flex-end;
+                width: fit-content;
+
+                &:hover {
+                    background-color: rgb(168, 15, 15);
+                }
+
+                @media screen and (max-width: 700px) {
+                    margin: 5px 0px 5px 0;
+                }
+
+            }
+        }
+    }
+}

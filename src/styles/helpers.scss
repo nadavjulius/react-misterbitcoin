@@ -1,0 +1,89 @@
+.card {
+    background: #fff;
+    border-radius: .25rem;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 3.1em;
+    box-shadow: 0 2px 3px rgba(42,44,46,.2), 0 1px 1px rgba(42,44,46,.14), 0 1px 5px rgba(42,44,46,.08);
+
+    @media screen and (max-width: 420px) {
+        margin-bottom: 1.2em;
+    }
+}
+
+.card-title { 
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.card-p {
+    font-weight: 600;
+    font-size: 1.12em;
+    font-family: monospace;
+    margin-left: 15px;
+    margin-bottom: 2px;
+
+    @media screen and (max-width: 420px) {
+        font-size: 1em;
+        margin-left: 0;
+    }
+}
+
+.main-btn {
+    font-size: 1em;
+    background: #008600;
+    border-style: none;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    background-color: #005d00;;
+}
+
+.second-btn {
+    font-size: 1.3em;
+    font-family: monospace;
+    background: #ebf6f5;
+    border-style: none;
+    color: rgb(168, 168, 168);
+    border-radius: 8px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding: 5px 10px; 
+    margin: 5px;
+    max-width: 300px;
+    text-align: center;
+    transition: all .3s ease;
+    font-weight: 800;
+}
+
+.second-btn:hover {
+    cursor: pointer;
+    background: #3d7c47;
+    color: #fff;
+
+}
+
+.loading-wrap {
+    height: 100vh;
+
+    &-txt {
+        font-size: 5rem;
+        text-shadow: 4px 4px 0 #008600, 0px 0px 0 #008600, 4px 4px 0 #008600, 2px 2px 0 #008600;
+        width: fit-content;
+        margin: auto;
+        margin-top: 100px;
+
+        @media screen and (max-width: 420px) {
+            font-size: 3rem;
+        }
+    }
+}
